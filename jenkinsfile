@@ -5,7 +5,7 @@ pipeline {
     }
     tools {
         // Specify the Maven tool installation using the 'Tool' step
-        Maven 'apache-maven-3.6.3'
+        MavenTool(name: 'Maven', type: 'hudson.tasks.Maven$MavenInstallation')
     }
     triggers {
         cron('0 06 * * *')
