@@ -4,8 +4,9 @@ pipeline {
         notifyEmail = "gagan4march@gmail.com"
     }
     tools {
-        // Specify the tool type ("Maven") and the tool name ("apache-maven-3.6.3")
-        Maven 'apache-maven-3.6.3'
+        // Specify the Maven tool installation using the 'Tool' step
+        // Replace 'MAVEN_HOME' with the actual name of your Maven tool installation
+        MavenHome mavenInstallation: 'MAVEN_HOME'
     }
     triggers {
         cron('0 06 * * *')
