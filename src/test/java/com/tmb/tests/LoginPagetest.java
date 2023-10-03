@@ -28,14 +28,6 @@ public class LoginPagetest extends FrameworkConstants {
 		driver.quit();
 	}
 	
-		@Test(priority=2)
-		public void test2() {
-			//System.setProperty("webdriver.chrome.driver",FrameworkConstants.CHROMEDRIVERPATH);
-			//WebDriver driver = new ChromeDriver(); 
-			driver.get("https://www.google.com/");
-
-			driver.findElement(By.name("q")).sendKeys("tvs",Keys.ENTER);
-			driver.quit();
-		}
+		
 }
  
