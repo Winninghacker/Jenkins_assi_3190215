@@ -4,8 +4,9 @@ pipeline {
         notifyEmail = "gagan4march@gmail.com"
     }
     tools {
-        // Specify the Maven tool installation using the 'Tool' step
-        MavenTool(name: 'Maven', type: 'hudson.tasks.Maven$MavenInstallation')
+        // Specify the Maven tool installation using the 'tool' step
+        // Replace 'MAVEN_HOME' with the actual name of your Maven tool installation
+        maven 'apache-maven-3.6.3'
     }
     triggers {
         cron('0 06 * * *')
