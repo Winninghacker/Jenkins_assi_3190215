@@ -5,8 +5,7 @@ pipeline {
     }
     tools {
         // Specify the Maven tool installation using the 'Tool' step
-        // Replace 'MAVEN_HOME' with the actual name of your Maven tool installation
-        Maven 'MAVEN_HOME'
+        Maven 'apache-maven-3.6.3'
     }
     triggers {
         cron('0 06 * * *')
@@ -30,4 +29,7 @@ pipeline {
     }
     post {
         success {
-            bat
+            bat "echo success"
+        }
+    }
+}
