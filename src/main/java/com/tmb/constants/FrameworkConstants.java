@@ -9,7 +9,7 @@ public class FrameworkConstants {
 	
     public static WebDriver driver;
 
-    @BeforeMethod
+    
     public void chrome() {
 
 
