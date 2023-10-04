@@ -6,7 +6,6 @@
       <class name="com.tmb.tests.LoginPagetest">
         <methods>
           <include name="test1"/>
-          <include name="chrome"/>
         </methods>
       </class> <!-- com.tmb.tests.LoginPagetest -->
     </classes>
